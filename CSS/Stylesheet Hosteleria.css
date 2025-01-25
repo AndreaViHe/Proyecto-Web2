@@ -55,10 +55,11 @@ body {
     justify-content: center;
     color: #fff;
     text-align: center;
-    background: #000;
+    background: transparent;
     overflow: hidden;
 }
 .proyectos-video {
+    opacity: 0.8;
     position: absolute;
     top: 0;
     left: 0;
