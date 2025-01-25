@@ -1,74 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Hostelería</title>
-        <link rel="Stylesheet" href="CSS/Stylesheet Hosteleria.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
+<head>
+    <meta charset="UTF-8">
+    <title>Proyectos Felo Monzón</title>
+    <link rel="stylesheet" href="css/Stylesheet Hosteleria.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
             <a href="https://elfelo.es/">
                 <img id="logo" src="img/Logo blanco sin letras.png" alt="Felo logo">
             </a>
-            <ul id="menu">
-                <li>Proyectos</li>
-                <li>Alumnos</li>
-                <li>Eventos</li>
-                <li>Docente</li>
-                <li>Idioma</li>
-            </ul>
-            <p id="registrarse">Registrarse</p>
-        </header>
-        <nav>
-            <!-- <video autoplay="true" muted="true" loop="true" >
-            <source src="img/cabecera1.mp4" type="video/mp4">
-            </video>  -->
-            
-            <div id="Titulo">
-                <h1>Proyectos originales por y para alumnos</h1>
-                <h3>Bienvenidos al Felo Monzón, donde hacemos variedad de trabajos para ayudar en la formación de nuestros jóvenes alumnos</h3>
-            </div>
-        </nav>
-        <nav id="ruleta">
-            <div id="Proyecto">
-                <p id="ProyectoTitulo">Proyecto 1</p>
-                <img src="img/cooking-5510047_1280.png" alt="Proyecto1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            </div>
-            <div id="Proyecto">
-                <p id="ProyectoTitulo">Proyecto 2</p>
-                <img src="img/cooking-5510047_1280.png" alt="Proyecto1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            </div>
-            <div id="Proyecto">
-                <p id="ProyectoTitulo">Proyecto 3</p>
-                <img src="img/cooking-5510047_1280.png" alt="Proyecto1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            </div>
-            <div id="Proyecto">
-                <p id="ProyectoTitulo">Proyecto 4</p>
-                <img src="img/cooking-5510047_1280.png" alt="Proyecto1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            </div>
-            <div id="Proyecto">
-                <p id="ProyectoTitulo">Proyecto 5</p>
-                <img src="img/cooking-5510047_1280.png" alt="Proyecto1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            </div>
-        </nav>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <nav id="info">
-            <div id="innovadoras">
-                <h1>¡Ideas innovadoras!</h1>
-            </div>
-            <div id="texto">
-                <p>Porque aprender tambiénd ebe ser divertido por eso 
-                    estamos a favor de realizar proyectis originales para fomentar
-                    el desarrollo de nuestros estudiantes.
-                </p>
-            </div>
-        </nav>
-    </body>
+    <section id="proyectos" class="proyectos">
+        <video autoplay muted loop class="proyectos-video">
+            <source src="images/agriculture.mp4" type="video/mp4">
+        </video>
+        <div class="proyectos-texto">
+            <h2>Proyectos originales por y para alumnos</h2>
+            <p>Variedad de trabajos para ayudar en la formación de nuestros jóvenes alumnos.</p>
+            <a href="#eventos" class="button">Saber Más</a>
+        </div>
+    </section>
+</body>
 </html>
