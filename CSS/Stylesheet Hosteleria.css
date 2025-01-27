@@ -43,7 +43,7 @@ body {
     font-weight: 500;
 }
 .nav-list a:hover {
-    color: #556e74;
+    color: #74898e;
     text-decoration: underline;
 }
 
@@ -91,4 +91,59 @@ body {
 }
 .button:hover {
     background: #58a4b0;
+}
+
+.eventos {
+    padding: 64px 32px;
+    text-align: center;
+    background: #fff;
+}
+.eventos-ruleta {
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+}
+.eventos-item {
+    background: #f4f4f9;
+    border-radius: 10px;
+    padding: 32px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.eventos-item:hover {
+    transform: scale(1.05);
+}
+.eventos-item i {
+    font-size: 40px;
+    margin-bottom: 16px;
+    color: #0c7b93;
+}
+
+.galeria {
+    padding: 64px 32px;
+}
+.galeria-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+}
+.galeria-img img {
+    flex: 0 0 23%;;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.galeria-img img:hover {
+    transform: scale(1.1);
+}
+
+#contacto {
+    text-align: center;
+    padding: 64px 32px;
+    background: #0c7b93;
+    color: #fff;
+}
+#contacto .button {
+    background: #fff;
+    color: #0c7b93;
 }
