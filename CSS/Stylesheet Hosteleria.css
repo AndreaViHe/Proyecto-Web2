@@ -147,3 +147,19 @@ body {
     background: #fff;
     color: #0c7b93;
 }
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 32px 16px;
+    text-align: center;
+}
+.iconos a {
+    margin: 0 8px;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+.iconos a:hover {
+    color: #58a4b0;
+}
