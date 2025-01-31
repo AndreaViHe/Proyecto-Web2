@@ -121,6 +121,7 @@ body {
 
 .galeria {
     padding: 64px 32px;
+    text-align: center;
 }
 .galeria-img {
     display: flex;
@@ -162,4 +163,38 @@ body {
 }
 .iconos a:hover {
     color: #58a4b0;
+}
+
+@media (max-width: 768px) {
+    .hero-overlay h2 {
+        font-size: 32px;
+    }
+
+    .eventos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-img img {
+        flex: 0 0 48%; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 24px;
+    }
+
+    .galeria-img img {
+        flex: 0 0 100%; 
+    }
 }
