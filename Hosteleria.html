@@ -41,18 +41,18 @@
                 <div class="eventos-ruleta">
                     <div class="eventos-item">
                         <i class="fas fa-hamburger"></i>
-                        <h3>fiojkdnksfkdskf</h3>
-                        <p>fdmksfnksssssssssssssssssssfnjddjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+                        <h3>Comedor</h3>
+                        <p>Nuestros alumnos sirven y preparan un menú para el resto de alumnos del Felo, los precios son variados</p>
                     </div>
                     <div class="eventos-item">
                         <i class="fas fa-seedling"></i>
-                        <h3>fiojkdnksfkdskf</h3>
-                        <p>fdmksfnksssssssssssssssssssfnjddjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+                        <h3>Charlas</h3>
+                        <p>Charlas organizadas por antiguos alumnos que ya han trabajado en este sector, normalmente incluyen actividades</p>
                     </div>
                     <div class="eventos-item">
                         <i class="fas fa-cookie"></i>
-                        <h3>fiojkdnksfkdskf</h3>
-                        <p>fdmksfnksssssssssssssssssssfnjddjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+                        <h3>Venta de dulces San Valentín</h3>
+                        <p>Venta de dulces diseñados y elaborados por nuestros alumnos especialmente para el día de San Valentín</p>
                     </div>
                 </div>
             </div>
@@ -62,18 +62,23 @@
             <div class="container">
                 <h2 class="title">Galería</h2>
                 <div class="galeria-img">
-                    <img class="gallery-img" src="img/img1.jpg" alt="Imagen 1">
-                    <img class="gallery-img" src="img/img2.jpg" alt="Imagen 2">
-                    <img class="gallery-img" src="img/img3.jpg" alt="Imagen 3">
-                    <img class="gallery-img" src="img/img4.jpg" alt="Imagen 4">
-                    <img class="gallery-img" src="img/img5.jpg" alt="Imagen 5">
-                    <img class="gallery-img" src="img/img6.jpg" alt="Imagen 6">
-                    <img class="gallery-img" src="img/img7.jpg" alt="Imagen 7">
-                    <img class="gallery-img" src="img/img8.jpg" alt="Imagen 8">
-                    <img class="gallery-img" src="img/img9.jpg" alt="Imagen 9">
-                    <img class="gallery-img" src="img/img10.jpg" alt="Imagen 10">
-                    <img class="gallery-img" src="img/img11.jpg" alt="Imagen 11">
-                    <img class="gallery-img" src="img/img12.jpg" alt="Imagen 12">
+                    <img id="MyImg1" onclick="mostrar(this)" class="gallery-img" src="img/img1.jpg" alt="Imagen 1">
+                    <img id="MyImg2" onclick="mostrar(this)" class="gallery-img" src="img/img2.jpg" alt="Imagen 2">
+                    <img id="MyImg3" onclick="mostrar(this)" class="gallery-img" src="img/img3.jpg" alt="Imagen 3">
+                    <img id="MyImg4" onclick="mostrar(this)" class="gallery-img" src="img/img4.jpg" alt="Imagen 4">
+                    <img id="MyImg5" onclick="mostrar(this)" class="gallery-img" src="img/img5.jpg" alt="Imagen 5">
+                    <img id="MyImg6" onclick="mostrar(this)" class="gallery-img" src="img/img6.jpg" alt="Imagen 6">
+                    <img id="MyImg7" onclick="mostrar(this)" class="gallery-img" src="img/img7.jpg" alt="Imagen 7">
+                    <img id="MyImg8" onclick="mostrar(this)" class="gallery-img" src="img/img8.jpg" alt="Imagen 8">
+                    <img id="MyImg9" onclick="mostrar(this)" class="gallery-img" src="img/img9.jpg" alt="Imagen 9">
+                    <img id="MyImg10" onclick="mostrar(this)" class="gallery-img" src="img/img10.jpg" alt="Imagen 10">
+                    <img id="MyImg11" onclick="mostrar(this)" class="gallery-img" src="img/img11.jpg" alt="Imagen 11">
+                    <img id="MyImg12" onclick="mostrar(this)" class="gallery-img" src="img/img12.jpg" alt="Imagen 12">
+                </div>
+                <div id="Modal" class="modal">
+                    <span class="close" onclick="cerrar()">	&times; </span>
+                    <img class="modal-content" id="imgM">
+                    <div id="caption"></div>
                 </div>
             </div>
         </section>
@@ -82,7 +87,7 @@
             <div class="container">
                 <h2>Apoya nuestros proyectos</h2>
                 <p>Descubre cómo realizar donaciones para el desarrollo de nuestor alumnos.</p>
-                <a class="button">Contáctanos</a>
+                <a href="Formulario.html" class="button">Regístrate</a>
             </div>
         </section>
     </main>

@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    color: #1b262c;
+    margin: 0;
+    background-color: #0c7b93;
+}
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+#central {
+    max-width: 320px;
+    width: 100%;
+}
+.titulo {
+    font-size: 250%;
+    color:#0c7b93;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: #f4f4f9;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    border-radius: 3px 3px 3px 3px; 
+    box-sizing: border-box;
+}
+#login input {
+    font-size: 110%;
+    color: #0c7b93;
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+}
+#login input::placeholder {
+    color: #cdcdcd;
+}
+#login button {
+    font-size: 110%;
+    color:#f4f4f9;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    background-color: #0c7b93;
+    margin-top: 10px;
+}
+#login button:hover {
+    background: #58a4b0;
+}
+
+.pie {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+.pie a {
+    display: block;
+    text-decoration: none;
+    color: #0c7b93;
+    margin-bottom: 3px;
+}
+.pie a:hover {
+    color: #0f4c75;
+}
+
+.inferior {
+    margin-top: 10px;
+    font-size: 90%;
+    text-align: center;
+}
+.inferior a {
+    display: block;
+    text-decoration: none;
+    color: #f4f4f9;
+    margin-bottom: 3px;
+}
+.inferior a:hover {
+    color: #3282b8;
+}
