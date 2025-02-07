@@ -132,44 +132,45 @@ html{
     padding-bottom: 30px;
 }
 .galeria-img {
-    display: block;
-    gap: 16px;
-    justify-content: space-between;
-}
-.contenedor img {
-    border-radius: 10px;
-    width: 20%;
-    display: block;
-}
-.galeria-img img:hover {
-    transform: scale(1.1);
+    display: flex;
+    gap: 16px; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 16px;
 }
 .contenedor {
     position: relative;
-    width: 100%;
+    width: 200px;
+    height: auto;
 }
+.galeria-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    transition: transform 0.5s ease; 
+}
+
 .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
+    background-color: #0c7b93; 
     width: 100%;
     height: 0;
-    transition: .5s ease;
-}  
-.container:hover .overlay {
-    height: 100%;
+    transition: height 0.6s ease;
+    overflow: hidden; 
+    border-radius: 0px 0px 10px 10px;
 }
-.desc{
-    color: white;
-    font-size: 20px;
+.contenedor:hover .overlay {
+    height: 40%; 
+}
+.desc {
+    color: #f4f4f9;
+    font-size: 15px;
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -186,6 +187,9 @@ html{
 #contacto .button {
     background: #fff;
     color: #0c7b93;
+}
+#contacto .button:hover{
+    background: #cfcfcf;
 }
 
 .footer {
@@ -289,7 +293,7 @@ html{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .nav-list {
         flex-direction: column;
         gap: 8px;
