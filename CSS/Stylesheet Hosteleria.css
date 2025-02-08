@@ -13,6 +13,8 @@ body {
 html{
     scroll-behavior: smooth;
 }
+
+/*Header*/
 .header {
     background: #0c7b93;
     color: #fff;
@@ -52,7 +54,9 @@ html{
     display: none;
 }
 
+/*Inicio(Video)*/
 .inicio {
+    scroll-margin-top: 200px;
     position: relative;
     height: 100vh;
     display: flex;
@@ -98,7 +102,9 @@ html{
     background: #58a4b0;
 }
 
+/*Sección Eventos*/
 .eventos {
+    scroll-margin-top: 70px;
     padding: 64px 32px;
     text-align: center;
     background: #fff;
@@ -124,9 +130,43 @@ html{
     color: #0c7b93;
 }
 
+/*Sección Menus*/
+.menus {
+    scroll-margin-top: 70px;
+    padding: 64px 32px;
+    text-align: center;
+}
+.menus h2 {
+    padding-bottom: 30px;
+}
+.menus-img {
+    display: flex;
+    gap: 23px; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 16px;
+}
+.contenedor {
+    position: relative;
+    width: 200px;
+    height: auto;
+}
+.menu-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    transition: transform 0.5s ease; 
+}
+.menu-img:hover {
+    transform: scale(1.05);
+}
+
+/*Sección Galeria*/
 .galeria {
+    scroll-margin-top: 70px;
     padding: 40px 32px;
     text-align: center;
+    background: #fff;
 }
 .galeria h2 {
     padding-bottom: 30px;
@@ -150,6 +190,7 @@ html{
     transition: transform 0.5s ease; 
 }
 
+/*Overlay de las img*/
 .overlay {
     position: absolute;
     bottom: 0;
@@ -175,6 +216,7 @@ html{
     text-align: center;
 }
 
+/*Sección Contacto*/
 #contacto {
     text-align: center;
     padding: 64px 32px;
@@ -192,6 +234,7 @@ html{
     background: #cfcfcf;
 }
 
+/*Sección Footer*/
 .footer {
     background: #333;
     color: #fff;
@@ -256,7 +299,6 @@ html{
     font-weight: bold;
     transition: 0.3s;
 }
-  
 .close:hover,
 .close:focus {
     color: #bbb;
@@ -264,6 +306,7 @@ html{
     cursor: pointer;
 }
 
+/*Responsive*/
 @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
