@@ -40,24 +40,30 @@
         <section id="eventos" class="eventos">
             <div class="container">
                 <h2 class="title">Futuros Eventos</h2>
-                <div class="eventos-ruleta">
-                    <div class="eventos-item">
-                        <i class="fas fa-hamburger"></i>
-                        <h3>Comedor</h3>
-                        <p>Nuestros alumnos sirven y preparan un menú para el resto de alumnos del Felo, los precios son variados</p>
+                <div class="eventos-carrusel">
+                    <div class="eventos-ruleta" id="eventosRuleta">
+                        <div class="eventos-item"><i class="fas fa-hamburger"></i><h3>Comedor</h3><p>Nuestros alumnos sirven y preparan un menú para el resto de alumnos del Felo, los precios son variados</p></div>
+                        <div class="eventos-item"><i class="fas fa-seedling"></i><h3>Charlas</h3><p>Charlas organizadas por antiguos alumnos que ya han trabajado en este sector, normalmente incluyen actividades</p></div>
+                        <div class="eventos-item"><i class="fas fa-cookie"></i><h3>Venta de dulces San Valentín</h3><p>Venta de dulces diseñados y elaborados por nuestros alumnos especialmente para el día de San Valentín</p></div>
+                        <div class="eventos-item"><i class="fas fa-utensils"></i><h3>Degustaciones</h3><p>Degustaciones gratuitas para experimentar las creaciones culinarias de los alumnos</p></div>
+                        <div class="eventos-item"><i class="fas fa-music"></i><h3>Concierto</h3><p>Evento musical en vivo organizado en el comedor del centro</p></div>
+                        <div class="eventos-item"><i class="fas fa-leaf"></i><h3>Feria de productos locales</h3><p>Productos de la región para apoyar a los productores locales</p></div>
+                        <div class="eventos-item"><i class="fas fa-wine-glass"></i><h3>Cata de vinos</h3><p>Cata de vinos seleccionados con maridajes hechos por los alumnos</p></div>
                     </div>
-                    <div class="eventos-item">
-                        <i class="fas fa-seedling"></i>
-                        <h3>Charlas</h3>
-                        <p>Charlas organizadas por antiguos alumnos que ya han trabajado en este sector, normalmente incluyen actividades</p>
-                    </div>
-                    <div class="eventos-item">
-                        <i class="fas fa-cookie"></i>
-                        <h3>Venta de dulces San Valentín</h3>
-                        <p>Venta de dulces diseñados y elaborados por nuestros alumnos especialmente para el día de San Valentín</p>
-                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                    <span class="dot" onclick="currentSlide(7)"></span>
                 </div>
             </div>
+        </section>
         </section>
 
         <section id="menus" class="menus">

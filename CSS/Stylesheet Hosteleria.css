@@ -114,12 +114,23 @@ html{
     gap: 32px;
     margin-top: 32px;
 }
+.eventos-carrusel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
 .eventos-item {
     background: #f4f4f9;
     border-radius: 10px;
     padding: 32px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    min-width: 300px;
+    transition: transform 0.5s ease;
+    margin: 0 10px;
 }
 .eventos-item:hover {
     transform: scale(1.05);
@@ -128,6 +139,53 @@ html{
     font-size: 40px;
     margin-bottom: 16px;
     color: #0c7b93;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #0c7b93;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 10px;
+}
+.prev:hover, .next:hover {
+    background-color: #0c7a93a7;
+    color: #fff;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
 /*Sección Menus*/
