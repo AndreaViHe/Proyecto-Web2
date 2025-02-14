@@ -20,7 +20,7 @@ html{
     color: #fff;
     padding: 16px 0;
     position: sticky;
-    top: 0;
+    top: 0 auto;
     z-index: 1000;
 }
 .header-container {
@@ -28,7 +28,7 @@ html{
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0 32px;
 }
 .header-container h2{
@@ -404,10 +404,7 @@ html{
 }
 
 @media (max-width: 600px) {
-    .nav-list {
-        flex-direction: column;
-        gap: 8px;
-    }
+
     .galeria-img img {
         flex: 0 0 23%;;
         border-radius: 10px;
@@ -436,8 +433,8 @@ html{
         font-weight: bold;
         transition: 0.3s;
     }
-
     .menu {
+        width: 100px;
         display: block;
         background-color: transparent;
         color: #f1f1f1;
@@ -447,6 +444,8 @@ html{
         margin-right: 10px;
     }
     .nav-list {
+        flex-direction: column;
+        gap: 8px;
         display: none;
         position: absolute;
         background-color: #f1f1f1;
@@ -456,7 +455,6 @@ html{
     .nav-list a {
         color: #0c7b93;
         padding: 12px 16px;
-
         display: block;
     }
     .header-container h2{
