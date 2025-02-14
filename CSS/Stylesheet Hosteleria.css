@@ -31,6 +31,10 @@ html{
     margin: 0 auto;
     padding: 0 32px;
 }
+.header-container h2{
+    font-family:serif;
+    left: 10px;
+}
 #logo {
     width: 40px;
     margin-top: 1px;
@@ -392,6 +396,11 @@ html{
         max-width: 400px;
         margin-top: 10px;
     }
+    .header-container h2{
+        font-family:serif;
+        font-size: 18px;
+        left: 10px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -449,6 +458,11 @@ html{
         padding: 12px 16px;
 
         display: block;
+    }
+    .header-container h2{
+        font-family:serif;
+        font-size: 20px;
+        left: 10px;
     }
     .nav-list a:hover {background-color: #f1f1f1;}
     .nav:hover .nav-list {display: block;}
