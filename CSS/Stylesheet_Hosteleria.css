@@ -291,6 +291,14 @@ html{
     text-align: center;
 }
 
+/*RSS*/
+#RSS {
+    display: block;
+    position: relative;
+    width: 75%;
+    margin: auto;
+}
+
 /*Sección Contacto*/
 #contacto {
     text-align: center;
